@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+
+      .container {
+        width: 520px;
+        padding: 40px;
+        border-radius: 40px;
+        box-shadow: 2px 2px 20px red;
+        background-color: white;
+      }
+
+      button {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        background-color: red;
+        margin-top: 15px;
+      }
+
+      button:hover {
+        background-color: black;
+        box-shadow: 2px 2px 2px red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="title">Hello World👩‍💻</h1>
+      <button id="changeText">Change Heading Text</button>
+    </main>
+
+    <!--Menggunakan JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $("#changeText").click(() => {
+        $("#title").text(
+          "Hai👋, kenalin aku Nurfadillah Umar dari angkatan 2022🐻"
+        );
+      });
+    </script>
+  </body>
+</html>
